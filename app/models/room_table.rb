@@ -1,0 +1,2 @@
+class RoomTable < ApplicationRecord
+end
