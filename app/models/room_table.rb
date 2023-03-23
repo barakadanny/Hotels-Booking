@@ -1,2 +1,0 @@
-class RoomTable < ApplicationRecord
-end
