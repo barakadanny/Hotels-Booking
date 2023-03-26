@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'support/factory_bot'
 
 RSpec.describe Rtype, type: :model do
   describe "validations" do
