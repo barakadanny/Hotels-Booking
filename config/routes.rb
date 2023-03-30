@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       end
       resources :rooms, only: [:index, :destroy, :update, :show]
       resources :rtypes
+      resources :services
     end
   end
 end
