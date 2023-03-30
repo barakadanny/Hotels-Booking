@@ -7,6 +7,7 @@ Rails.application.routes.draw do
         resources :rooms, only: [:create]
       end
       resources :rooms, only: [:index, :destroy, :update, :show]
+      resources :rtypes
     end
   end
 end
