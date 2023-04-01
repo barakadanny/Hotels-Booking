@@ -3,8 +3,8 @@ class Api::V1::RoomsController < ApplicationController
     protect_from_forgery with: :null_session
   
     def index
-      @rooms = Room.all
-      render json: @rooms, status: :ok
+      @rooms = Room.includes(:services, :room_photos)
+      render json: @rooms.to_json(include: [:services, :room_photos]) , status: :ok
     end
   
     def new
