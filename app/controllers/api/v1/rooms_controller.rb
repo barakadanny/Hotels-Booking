@@ -22,7 +22,7 @@ class Api::V1::RoomsController < ApplicationController
     end
   
     def show
-      render json: @room
+      render json: @room.to_json(include: [:services, :room_photos, room_type: { include: :rtype }])
     end
   
     def update
